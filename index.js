@@ -1,5 +1,12 @@
 var express = require('express');
 var app = express();
+var React = require('react');
+require('node-jsx').install({
+	harmony: true,
+	extension: '.jsx'
+});
+
+
 
 app.get('/', function (req, res) {
   res.send('Hello World!');
